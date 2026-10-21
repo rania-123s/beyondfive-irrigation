@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Beyond Five</title>
+  <meta name="theme-color" content="#000b17">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <img class="logo" src="logo.png" alt="Beyond Five">
+    <button id="install" hidden>Installer</button>
+    <div class="avatar" title="Mohamed Trabelsi">MT</div>
+  </header>
+  <nav class="tabs">
+    <div class="brand"><img src="logo.png" alt="Beyond Five"></div>
+    <a href="#/" data-r="home"><span>🏠</span>Accueil</a>
+    <a href="#/plantes" data-r="plantes"><span>🌿</span>Plantes</a>
+    <a href="#/sante" data-r="sante"><span>❤️</span>Santé</a>
+    <a href="#/diagnostic" data-r="diagnostic"><span>📷</span>Diagnostic</a>
+    <a href="#/alertes" data-r="alertes"><span>🔔</span>Alertes<em id="nb-alertes" class="nb"></em></a>
+    <div id="sidecats" class="sidecats"></div>
+    <div class="user"><div class="avatar">MT</div><div><b>Mohamed Trabelsi</b><small>Agriculteur</small></div></div>
+  </nav>
+  <main id="app"></main>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
