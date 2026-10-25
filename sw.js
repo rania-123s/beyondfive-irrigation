@@ -1,4 +1,4 @@
-const CACHE = 'agrismart-v10';
+const CACHE = 'agrismart-v11';
 const FILES = ['./', 'index.html', 'style.css', 'data.js', 'app.js', 'manifest.webmanifest', 'logo-mark.svg', 'icon-192.png', 'icon-512.png'];
 
 self.addEventListener('install', e => {
