@@ -183,9 +183,8 @@ a.card:active, .card.stat:active { transform: scale(.97); }
   .sidecats a.on { background: color-mix(in srgb, var(--brand) 14%, transparent); color: var(--brand); }
 }
 
-/* Logo Beyond Five */
+/* En-tête */
 .top { background: #000b17; box-shadow: 0 6px 20px rgba(0, 11, 23, .35); border-bottom: 3px solid var(--brand2); padding-top: calc(8px + env(safe-area-inset-top)); padding-bottom: 8px; }
-.top .logo { height: 56px; width: auto; display: block; }
 .tabs .brand img { width: 100%; display: block; border-radius: 18px; }
 
 /* Profil utilisateur */
@@ -194,7 +193,6 @@ a.card:active, .card.stat:active { transform: scale(.97); }
   background: linear-gradient(135deg, var(--brand), var(--brand2)); color: #fff; font-weight: 800; font-size: 14px;
 }
 .top { gap: 10px; }
-.top .logo { margin-right: auto; }
 .user { display: none; }
 @media (min-width: 900px) {
   .user {
