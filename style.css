@@ -249,3 +249,16 @@ a.card:active, .card.stat:active { transform: scale(.97); }
 .reset { height: 44px; border-radius: 14px; transition: transform .12s ease; }
 .reset:active { transform: scale(.97); }
 @media (max-width: 480px) { .selgrid { grid-template-columns: 1fr; } }
+
+/* NABTAsmart : nouveau logo et en-tête vert */
+.top { background: linear-gradient(135deg, #138a4a, #5fbf4f); border-bottom: 0; box-shadow: 0 6px 20px rgba(19, 138, 74, .3); }
+.brandline { display: flex; align-items: center; gap: 10px; margin-right: auto; }
+.brandline img { width: 40px; height: 40px; border-radius: 12px; display: block; box-shadow: 0 2px 8px rgba(0, 0, 0, .18); }
+.wordmark { font-size: 22px; font-weight: 800; letter-spacing: -.5px; color: #fff; line-height: 1; }
+.wordmark b { font-weight: 600; opacity: .9; }
+.avatar { background: rgba(255, 255, 255, .25); border: 2px solid rgba(255, 255, 255, .6); }
+.tabs .brand { padding: 4px 12px 20px; }
+.tabs .brand .wordmark { color: var(--text); }
+.tabs .brand .wordmark b { color: var(--brand); opacity: 1; }
+.tabs .brand img { width: 44px; height: 44px; border-radius: 14px; }
+.user .avatar { background: linear-gradient(135deg, var(--brand), var(--brand2)); border: 0; }

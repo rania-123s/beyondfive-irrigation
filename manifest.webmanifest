@@ -1,13 +1,13 @@
 {
-  "name": "Beyond Five - Irrigation intelligente",
-  "short_name": "Beyond Five",
+  "name": "NABTAsmart - Irrigation intelligente",
+  "short_name": "NABTAsmart",
   "description": "Suivi de la santé des plantes et de l'irrigation",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#000b17",
-  "theme_color": "#000b17",
+  "background_color": "#f4f7f2",
+  "theme_color": "#138a4a",
   "lang": "fr",
   "icons": [
     {

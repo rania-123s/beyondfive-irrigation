@@ -1,5 +1,5 @@
-const CACHE = 'agrismart-v9';
-const FILES = ['./', 'index.html', 'style.css', 'data.js', 'app.js', 'manifest.webmanifest', 'logo.png', 'icon-192.png', 'icon-512.png'];
+const CACHE = 'agrismart-v10';
+const FILES = ['./', 'index.html', 'style.css', 'data.js', 'app.js', 'manifest.webmanifest', 'logo-mark.svg', 'icon-192.png', 'icon-512.png'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)));
