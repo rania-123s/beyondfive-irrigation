@@ -3,34 +3,47 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>NABTAsmart</title>
+  <title>NABTAsmart - Application indisponible</title>
   <meta name="theme-color" content="#138a4a">
-  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="robots" content="noindex">
   <link rel="icon" href="icon-192.png" type="image/png">
-  <link rel="apple-touch-icon" href="icon-192.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;800&display=swap">
-  <link rel="stylesheet" href="style.css">
+  <style>
+    * { box-sizing: border-box; margin: 0; }
+    body {
+      min-height: 100vh; display: flex; align-items: center; justify-content: center;
+      padding: 24px; background: #f2f7f3; color: #1d2b22;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; text-align: center;
+    }
+    .card {
+      max-width: 420px; width: 100%; background: #fff; border-radius: 20px;
+      padding: 40px 28px; box-shadow: 0 8px 30px rgba(19, 138, 74, .12);
+    }
+    .logo { width: 64px; height: 64px; margin-bottom: 16px; }
+    .wordmark { font-size: 26px; font-weight: 300; letter-spacing: .5px; color: #138a4a; margin-bottom: 24px; }
+    .wordmark b { font-weight: 800; }
+    h1 { font-size: 20px; margin-bottom: 12px; }
+    p { font-size: 15px; line-height: 1.5; color: #4a5a50; }
+  </style>
 </head>
 <body>
-  <header class="top">
-    <div class="brandline"><img src="logo-mark.svg" alt=""><span class="wordmark">NABTA<b>smart</b></span></div>
-    <button id="install" hidden>Installer</button>
-    <div class="avatar" title="Mohamed Trabelsi">MT</div>
-  </header>
-  <nav class="tabs">
-    <div class="brand"><div class="brandline"><img src="logo-mark.svg" alt=""><span class="wordmark">NABTA<b>smart</b></span></div></div>
-    <a href="#/" data-r="home"><span>🏠</span>Accueil</a>
-    <a href="#/plantes" data-r="plantes"><span>🌿</span>Plantes</a>
-    <a href="#/sante" data-r="sante"><span>❤️</span>Santé</a>
-    <a href="#/diagnostic" data-r="diagnostic"><span>📷</span>Diagnostic</a>
-    <a href="#/alertes" data-r="alertes"><span>🔔</span>Alertes<em id="nb-alertes" class="nb"></em></a>
-    <div id="sidecats" class="sidecats"></div>
-    <div class="user"><div class="avatar">MT</div><div><b>Mohamed Trabelsi</b><small>Agriculteur</small></div></div>
-  </nav>
-  <main id="app"></main>
-  <script src="data.js"></script>
-  <script src="app.js"></script>
+  <main class="card">
+    <img class="logo" src="logo-mark.svg" alt="">
+    <div class="wordmark">NABTA<b>smart</b></div>
+    <h1>Application temporairement indisponible</h1>
+    <p>NABTAsmart est suspendue pour le moment.<br>Merci de votre compréhension, elle sera de retour prochainement.</p>
+  </main>
+  <script>
+    // Désinstalle tout service worker restant et vide les caches de l'appareil.
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(function (regs) {
+        regs.forEach(function (r) { r.unregister(); });
+      });
+    }
+    if (window.caches) {
+      caches.keys().then(function (keys) {
+        keys.forEach(function (k) { caches.delete(k); });
+      });
+    }
+  </script>
 </body>
 </html>
